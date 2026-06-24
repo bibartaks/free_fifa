@@ -33,8 +33,10 @@ export default function RootLayout({
       lang="en"
       className={`${roboto.className} ${roboto.className} h-full antialiased`}
     >
-      <Analytics />
-      <body className={` ${roboto.className} min-h-full flex flex-col`}>{children}</body>
+      <body className={` ${roboto.className} min-h-full flex flex-col`}>
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }
